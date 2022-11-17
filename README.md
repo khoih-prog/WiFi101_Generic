@@ -1,4 +1,4 @@
-= {repository-name} library for the Arduino WiFi Shield 101 and MKR1000 board =
+## WiFi101_Generic library for boards using ATMEL WINC1500 WiFi
 
 [![arduino-library-badge](https://www.ardu-badge.com/badge/WiFi101_Generic.svg?)](https://www.ardu-badge.com/WiFi101_Generic)
 [![GitHub release](https://img.shields.io/github/release/khoih-prog/WiFi101_Generic.svg)](https://github.com/khoih-prog/WiFi101_Generic/releases)
