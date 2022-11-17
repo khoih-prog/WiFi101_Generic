@@ -225,7 +225,7 @@ These files must be copied into the directory:
 
 ### Debug
 
-Debug is enabled by default on Serial. Debug Level from 0 to 4. To disable, change the _ETHERNET_WEBSERVER_LOGLEVEL_ to 0
+Debug is enabled by default on Serial. Debug Level from 0 to 4. To disable, change the _WIFININA_LOGLEVEL_ to 0
 
 ```cpp
 // Use this to output debug msgs to Serial
