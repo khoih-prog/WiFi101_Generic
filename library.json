@@ -5,15 +5,15 @@
   "description": "Network driver for for SAMD21, SAMD51 boards using ATMEL WINC1500 module (used on Arduino/Genuino Wifi Shield 101 and MKR1000 boards). Modified from Arduino WiFi101 library. Now with fix of severe limitation to permit sending much larger data and be compatible with WebSockets2_Generic library",
   "authors": [
     {
-    "name":  "Arduino",
-    "url":   "https://arduino.cc",
+		  "name":  "Arduino",
+		  "url":   "https://arduino.cc"
     },
     {
       "name":  "Khoi Hoang",
       "url":   "https://github.com/khoih-prog",
       "email": "khoih-dot-prog@gmail.com",
       "maintainer": true
-    }  
+    }
   ],
   "repository":
   {
