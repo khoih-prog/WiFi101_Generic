@@ -21,6 +21,7 @@
 * [Changelog](changelog.md) 
 * [Prerequisites](#prerequisites)
 * [Installation](#installation)
+  * [Use Arduino Library Manager](#use-arduino-library-manager)
   * [Manual Install](#manual-install)
   * [VS Code & PlatformIO](#vs-code--platformio)
 * [Packages' Patches](#packages-patches)
@@ -99,6 +100,10 @@ This [**WiFi101_Generic** library](https://github.com/khoih-prog/WiFi101_Generic
 ---
 
 ## Installation
+
+### Use Arduino Library Manager
+The best and easiest way is to use `Arduino Library Manager`. Search for [**WiFi101_Generic**](https://github.com/khoih-prog/WiFi101_Generic), then select / install the latest version.
+You can also use this link [![arduino-library-badge](https://www.ardu-badge.com/badge/WiFi101_Generic.svg?)](https://www.ardu-badge.com/WiFi101_Generic) for more detailed instructions.
 
 ### Manual Install
 
