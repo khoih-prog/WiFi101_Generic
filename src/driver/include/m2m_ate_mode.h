@@ -190,7 +190,7 @@ typedef enum
 typedef enum
 {
   M2M_ATE_TX_DPD_DYNAMIC  = 0x00,
-  /*!< Dynamic mode indicates that DPD values will be set dynamically from a lookup table pre-set with the DPD coefficents.
+  /*!< Dynamic mode indicates that DPD values will be set dynamically from a lookup table pre-set with the DPD coefficients.
   */
   M2M_ATE_TX_DPD_BYPASS = 0x01,
   /*!< Bypass mode indicates that the DPD control will be bypassed.
@@ -255,10 +255,10 @@ typedef enum
 typedef enum
 {
   M2M_ATE_TX_MODE_NORM  = 0x00,
-  /*!< When the TX source is set to PHY,normal mode indicates that continous transmission is disabled.
+  /*!< When the TX source is set to PHY,normal mode indicates that continuous transmission is disabled.
   */
   M2M_ATE_TX_MODE_CW    = 0x01,
-  /*!< When the TX source is set to PHY, continous mode indicates that transmission sequences occur back to back in a continous wave from the PHY layer.
+  /*!< When the TX source is set to PHY, continuous mode indicates that transmission sequences occur back to back in a continuous wave from the PHY layer.
   */
 } tenuM2mAteTxMode;
 
@@ -345,7 +345,7 @@ typedef struct
 
 /*!
   @struct tstrM2mAteRxStatus
-  @brief  Used to save recieve test case configuration
+  @brief  Used to save receive test case configuration
   @see    tenuM2mAteRxPwrMode
 */
 typedef struct
@@ -421,7 +421,7 @@ typedef struct
   /*!< Set to 0 to use the XO offset provided in xo_offset_x1000. Set to 1 to use XO offset programmed on WINC efuse.
   */
   uint8    self_mac_addr[6];
-  /*!< Set to the self mac address required to be overriden.
+  /*!< Set to the self mac address required to be overridden.
   */
   uint8    peer_mac_addr[6];
   /*!< Set to the source mac address expected to filter frames from.

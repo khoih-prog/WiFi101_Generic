@@ -826,7 +826,7 @@ uint32 spi_flash_get_size(void)
     }
     else
     {
-      M2M_ERR("Cann't Detect Flash size\n");
+      M2M_ERR("Can't Detect Flash size\n");
     }
   }
 

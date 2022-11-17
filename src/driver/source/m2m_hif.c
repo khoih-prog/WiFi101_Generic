@@ -731,7 +731,7 @@ sint8 hif_handle_isr(void)
 
       if (ret == M2M_SUCCESS)
       {
-        /*we will try forever untill we get that interrupt*/
+        /*we will try forever until we get that interrupt*/
         /*Fail return errors here due to bus errors (reading expected values)*/
         break;
       }
@@ -780,14 +780,14 @@ sint8 hif_receive(uint32 u32Addr, uint8 *pu8Buf, uint16 u16Sz, uint8 isDone)
   if (u16Sz > gstrHifCxt.u32RxSize)
   {
     ret = M2M_ERR_FAIL;
-    M2M_ERR("APP Requested Size is larger than the recived buffer size <%u><%lu>\n", u16Sz, gstrHifCxt.u32RxSize);
+    M2M_ERR("APP Requested Size is larger than the received buffer size <%u><%lu>\n", u16Sz, gstrHifCxt.u32RxSize);
     goto ERR1;
   }
 
   if ((u32Addr < gstrHifCxt.u32RxAddr) || ((u32Addr + u16Sz) > (gstrHifCxt.u32RxAddr + gstrHifCxt.u32RxSize)))
   {
     ret = M2M_ERR_FAIL;
-    M2M_ERR("APP Requested Address beyond the recived buffer address and length\n");
+    M2M_ERR("APP Requested Address beyond the received buffer address and length\n");
     goto ERR1;
   }
 

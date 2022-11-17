@@ -76,7 +76,7 @@ extern "C" {
 
 #define SOCKET_CMD_INVALID          0x00
 /*!<
-  Invlaid Socket command value.
+  Invalid Socket command value.
 */
 
 
@@ -112,7 +112,7 @@ extern "C" {
 
 #define SOCKET_CMD_RECV           0x46
 /*!<
-  Socket Recieve command value.
+  Socket Receive command value.
 */
 
 
@@ -124,7 +124,7 @@ extern "C" {
 
 #define SOCKET_CMD_RECVFROM         0x48
 /*!<
-  Socket RecieveFrom command value.
+  Socket ReceiveFrom command value.
 */
 
 
@@ -154,7 +154,7 @@ extern "C" {
 
 #define SOCKET_CMD_SSL_RECV         0x4D
 /*!<
-  SSL-Socket Recieve command value.
+  SSL-Socket Receive command value.
 */
 
 

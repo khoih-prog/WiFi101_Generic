@@ -96,7 +96,7 @@ typedef enum
   @typedef \
   tpfAppCryproCb
 
-  @brief      Crypto Calback function receiving the crypto related messages
+  @brief      Crypto Callback function receiving the crypto related messages
   @param [in] u8MsgType
         Crypto command about which the notification is received.
   @param [in] pvResp
@@ -125,7 +125,7 @@ extern "C" {
   @brief  crypto initialization.
 
   @param[in]  pfAppCryproCb
-        Pointer to the Crypto Calback function receiving the crypto related messages.
+        Pointer to the Crypto Callback function receiving the crypto related messages.
   @see
   tpfAppCryproCb
 
@@ -160,7 +160,7 @@ sint8 m2m_crypto_sha256_hash_init(tstrM2mSha256Ctxt *psha256Ctxt);
         Buffer holding the data submitted to the hash.
 
   @param [in] u16DataLength
-        Size of the data bufefr in bytes.
+        Size of the data buffer in bytes.
   @pre SHA256 module should be initialized first through m2m_crypto_sha256_hash_init function.
 
   @see m2m_crypto_sha256_hash_init
@@ -259,7 +259,7 @@ sint8 m2m_crypto_rsa_sign_verify(uint8 *pu8N, uint16 u16NSize, uint8 *pu8E, uint
         The length of the hash digest.
 
   @param[out] pu8RsaSignature
-        Pointer to a user buffer allocated by teh caller shall hold the generated signature.
+        Pointer to a user buffer allocated by the caller shall hold the generated signature.
 
   @return
   The function returns @ref M2M_SUCCESS for successful operation and a negative value otherwise.

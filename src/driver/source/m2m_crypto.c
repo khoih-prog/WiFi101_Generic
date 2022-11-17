@@ -891,7 +891,7 @@ sint8 m2m_crypto_sha256_hash_init(tstrM2mSha256Ctxt *psha256Ctxt)
         Buffer holding the data submitted to the hash.
 
   @param [in] u16DataLength
-        Size of the data bufefr in bytes.
+        Size of the data buffer in bytes.
 */
 sint8 m2m_crypto_sha256_hash_update(tstrM2mSha256Ctxt *psha256Ctxt, uint8 *pu8Data, uint16 u16DataLength)
 {
@@ -1031,7 +1031,7 @@ sint8 m2m_crypto_rsa_sign_verify(uint8 *pu8N, uint16 u16NSize, uint8 *pu8E, uint
         The length of the hash digest.
 
   @param[out] pu8RsaSignature
-        Pointer to a user buffer allocated by teh caller shall hold the generated signature.
+        Pointer to a user buffer allocated by the caller shall hold the generated signature.
 */
 sint8 m2m_crypto_rsa_sign_gen(uint8 *pu8N, uint16 u16NSize, uint8 *pu8d, uint16 u16dSize, uint8 *pu8SignedMsgHash,
                               uint16 u16HashLength, uint8 *pu8RsaSignature)

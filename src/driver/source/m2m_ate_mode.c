@@ -2,7 +2,7 @@
 
    \file
 
-   \brief NMC1500 Peripherials Application Interface.
+   \brief NMC1500 Peripherals Application Interface.
 
    Copyright (c) 2016-2017 Atmel Corporation. All rights reserved.
 

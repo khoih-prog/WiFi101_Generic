@@ -101,7 +101,7 @@ uint8 m2m_strncmp(uint8 *pcS1, uint8 *pcS2, uint16 u16Len)
   return 0;
 }
 
-/* Finds the occurance of pcStr in pcIn.
+/* Finds the occurrence of pcStr in pcIn.
   If pcStr is part of pcIn it returns a valid pointer to the start of pcStr within pcIn.
   Otherwise a NULL Pointer is returned.
 */

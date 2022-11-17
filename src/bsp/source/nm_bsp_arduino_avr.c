@@ -101,7 +101,7 @@ ISR(TIMER4_OVF_vect)
   prev_pin_read = curr_pin_read;
 }
 
-// stategy 3 - start a timer and perform a sort of polling
+// strategy 3 - start a timer and perform a sort of polling
 void attachFakeInterruptToTimer(void)
 {
   TCCR4B = (1 << CS41);
@@ -144,7 +144,7 @@ void attachInterruptMultiArch(uint32_t pin, void *chip_isr, uint32_t mode)
   int pin_irq;
   gpfIsr = chip_isr;
 
-  // stategy 0 - attach external interrupt to pin (works on 32u4)
+  // strategy 0 - attach external interrupt to pin (works on 32u4)
   pin_irq = digitalPinToInterrupt((int)pin);
 
   if (pin_irq == (int)NOT_AN_INTERRUPT)

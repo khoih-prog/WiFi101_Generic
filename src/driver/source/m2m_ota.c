@@ -110,7 +110,7 @@ static void m2m_ota_cb(uint8 u8OpCode, uint16 u16DataSize, uint32 u32Addr)
   }
   else
   {
-    M2M_ERR("Invaild OTA resp %d ?\n", u8OpCode);
+    M2M_ERR("Invalid OTA resp %d ?\n", u8OpCode);
   }
 
 }
@@ -140,7 +140,7 @@ NMI_API sint8  m2m_ota_init(tpfOtaUpdateCb pfOtaUpdateCb, tpfOtaNotifCb pfOtaNot
   }
   else
   {
-    M2M_ERR("Invaild Ota update cb\n");
+    M2M_ERR("Invalid Ota update cb\n");
   }
 
   if (pfOtaNotifCb)
@@ -149,7 +149,7 @@ NMI_API sint8  m2m_ota_init(tpfOtaUpdateCb pfOtaUpdateCb, tpfOtaNotifCb pfOtaNot
   }
   else
   {
-    M2M_ERR("Invaild Ota notify cb\n");
+    M2M_ERR("Invalid Ota notify cb\n");
   }
 
   hif_register_cb(M2M_REQ_GROUP_OTA, m2m_ota_cb);
@@ -173,8 +173,8 @@ NMI_API sint8  m2m_ota_notif_set_url(uint8 * u8Url)
 {
   sint8 ret = M2M_SUCCESS;
   uint16 u16UrlSize = m2m_strlen(u8Url) + 1;
-  /*Todo: we may change it to data pkt but we need to give it higer priority
-      but the priorty is not implemnted yet in data pkt
+  /*Todo: we may change it to data pkt but we need to give it higher priority
+      but the priority is not implemnted yet in data pkt
   */
   ret = hif_send(M2M_REQ_GROUP_OTA, M2M_OTA_REQ_NOTIF_SET_URL, u8Url, u16UrlSize, NULL, 0, 0);
   return ret;

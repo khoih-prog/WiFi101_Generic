@@ -303,7 +303,7 @@ sint8 nm_drv_init_download_mode()
   */
   if (!ISNMC3000(GET_CHIPID()))
   {
-    /*Execuate that function only for 1500A/B, no room in 3000, but it may be needed in 3400 no wait*/
+    /*Execute that function only for 1500A/B, no room in 3000, but it may be needed in 3400 no wait*/
     chip_reset_and_cpu_halt();
   }
 

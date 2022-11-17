@@ -46,7 +46,7 @@
 #include <SPI.h>
 
 /*
-   Variants may define an alternative SPI instace to use for WiFi101.
+   Variants may define an alternative SPI instance to use for WiFi101.
    If not defined the following defaults are used:
      WINC1501_SPI    - SPI
 */
@@ -170,7 +170,7 @@ extern "C" {
 
       default:
         s8Ret = -1;
-        M2M_ERR("invalide ioclt cmd\n");
+        M2M_ERR("invalid ioctl cmd\n");
         break;
     }
 

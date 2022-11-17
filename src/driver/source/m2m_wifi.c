@@ -566,7 +566,7 @@ sint8 m2m_wifi_init(tstrWifiInitParam * param)
 
   if (M2M_ERR_FW_VER_MISMATCH == ret)
   {
-    M2M_ERR("Mismatch Firmawre Version\n");
+    M2M_ERR("Mismatch Firmware Version\n");
   }
 
   goto _EXIT0;
@@ -1058,7 +1058,7 @@ sint8 m2m_wifi_enable_ap(CONST tstrM2MAPConfig* pstrM2MAPConfig)
 
     if (nmdrv_firm_ver < M2M_MAKE_VERSION(19, 5, 0))
     {
-      // for backwards compat with firmwware 19.4.x and older
+      // for backwards compat with Firmware 19.4.x and older
       // (listen channel is 0 based, there is no au8Key field)
       ((tstrM2MAPConfig*)pstrM2MAPConfig)->u8ListenChannel--;
       txSize -= sizeof(pstrM2MAPConfig->au8Key) + 1;
@@ -1390,7 +1390,7 @@ sint8 m2m_wifi_start_provision_mode(tstrM2MAPConfig *pstrAPConfig, char *pcHttpS
 
       if (nmdrv_firm_ver < M2M_MAKE_VERSION(19, 5, 0))
       {
-        // for backwards compat with firmwware 19.4.x and older
+        // for backwards compat with Firmware 19.4.x and older
         // (listen channel is 0 based, there is no au8Key field)
         strProvConfig.strApConfig.u8ListenChannel--;
         txSize -= sizeof(strProvConfig.strApConfig.au8Key) + 1;

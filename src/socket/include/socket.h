@@ -697,7 +697,7 @@ typedef enum
   @brief  Socket bind status.
 
   An asynchronous call to the @ref bind socket operation, returns information through this structure in response.
-  This structure together with the event @ref SOCKET_MSG_BIND are passed in paramters to the callback function.
+  This structure together with the event @ref SOCKET_MSG_BIND are passed in parameters to the callback function.
   @see
      bind
 
@@ -835,7 +835,7 @@ typedef struct
   @param [in] sock
         Socket ID for the callback.
 
-        The socket callback function is called whenever a new event is recived in response
+        The socket callback function is called whenever a new event is received in response
         to socket operations.
 
   @param [in] u8Msg
@@ -920,7 +920,7 @@ typedef void (*tpfPingCb)(uint32 u32IPAddr, uint32 u32RTT, uint8 u8ErrorCode);
     @ingroup SocketAPI
        The function performs the necessary initializations for the socket library through the following steps:
   - A check made by the global variable gbSocketInit, ensuring that initialization for sockets is performed only once,
-   in-order to prevent reseting the socket instances already created in the global socket array (gastrSockets).
+   in-order to prevent resetting the socket instances already created in the global socket array (gastrSockets).
   - Zero initializations to the global socket array (gastrSockets), which holds the list of TCP sockets.
   - Registers the socket (Host Interface)hif callback function through the call to the hif_register_cb function.
      This facilitates handling  all of the socket related functions received through interrupts from the firmware.
@@ -1529,7 +1529,7 @@ NMI_API sint8 connect(SOCKET sock, struct sockaddr *pstrAddr, uint8 u8AddrLen);
     Indicating that the operation was successful.
 
   - [SOCK_ERR_INVALID_ARG](@ref SOCK_ERR_INVALID_ARG)
-    Indicating passing invalid arguments such as negative socket ID or NULL Recieve buffer.
+    Indicating passing invalid arguments such as negative socket ID or NULL Receive buffer.
 
   - [SOCK_ERR_BUFFER_FULL](@ref SOCK_ERR_BUFFER_FULL)
     Indicate socket receive failure.
@@ -1676,7 +1676,7 @@ NMI_API sint16 recv(SOCKET sock, void *pvRecvBuf, uint16 u16BufLen, uint32 u32Ti
         uint16 u16port = pstrRx->strRemoteAddr.sin_port;
         uint32 strRemoteHostAddr = pstrRx->strRemoteAddr.sin_addr.s_addr;
 
-        printf("Recieved frame with size = %d.\tHost address=%x, Port number = %d\n\n",pstrRx->s16BufferSize,strRemoteHostAddr, u16port);
+        printf("Received frame with size = %d.\tHost address=%x, Port number = %d\n\n",pstrRx->s16BufferSize,strRemoteHostAddr, u16port);
 
         ret = recvfrom(sock,gau8SocketTestBuffer,sizeof(gau8SocketTestBuffer),TEST_RECV_TIMEOUT);
       }
@@ -1953,7 +1953,7 @@ NMI_API sint8 sslEnableCertExpirationCheck(tenuSslCertExpSettings enuValidationS
       32-bit integer containing the multicast IPv4 address.</td>
     </tr>
   </table>
-  <p>Possible options when the protcol leve&nbsp; is @ref SOL_SSL_SOCKET</p>
+  <p>Possible options when the protocol level&nbsp; is @ref SOL_SSL_SOCKET</p>
   <table style="width: 100%">
     <tr>
       <td style="height: 22px"><strong>
@@ -2049,7 +2049,7 @@ NMI_API sint8 getsockopt(SOCKET sock, uint8 u8Level, uint8 u8OptName, const void
   @param [in]  u32DstIP
         Target Destination IP Address for the ping request. It must be represented in Network byte order.
         The function nmi_inet_addr could be used to translate the dotted decimal notation IP
-        to its Network bytes order integer represntative.
+        to its Network bytes order integer representative.
 
   @param [in] u8TTL
         IP TTL value for the ping request. If set to ZERO, the dfault value SHALL be used.

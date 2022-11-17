@@ -533,7 +533,7 @@ void socketDeinit(void)
   Author
     Ahmed Ezzat
 
-  Versio
+  Version
     1.0
 
   Date
