@@ -1,5 +1,5 @@
 /**********************************************************************************************************************************
-  WiFi.h - Library for Arduino Wifi shield.
+  WiFi101_Generic.h - Library for Arduino Wifi shield.
 
   Based on and modified from
 
