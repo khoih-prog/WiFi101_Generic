@@ -46,7 +46,13 @@
 
 ## Changelog
 
+### Releases v1.0.0
 
+- 2022.11.17
+
+1. Fix severe limitation to permit sending much larger data than total 4K
+2. Use `allman astyle` and add `utils`
+3. Add `Packages' Patches`
 
 ### Releases v0.16.1
 
