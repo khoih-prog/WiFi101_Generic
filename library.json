@@ -2,7 +2,7 @@
   "name": "WiFi101_Generic",
   "version": "1.0.0",
   "keywords": "wifi, wi-fi, SSL, TLS, WebServer, WiFiNINA, WiFi101, SAMD, HTTP-Client, WebSocket-Client, server, client, websocket, wifi-multi",
-  "description": "Network driver for for SAMD21, SAMD51 boards using ATMEL WINC1500 module (used on Arduino/Genuino Wifi Shield 101 and MKR1000 boards). Modified from Arduino WiFi101 library. Now with fix of severe limitation to permit sending much larger data and be compatible with WebSockets_Generic library",
+  "description": "Network driver for for SAMD21, SAMD51 boards using ATMEL WINC1500 module (used on Arduino/Genuino Wifi Shield 101 and MKR1000 boards). Modified from Arduino WiFi101 library. Now with fix of severe limitation to permit sending much larger data and be compatible with WebSockets2_Generic library",
   "authors": [
     {
     "name":  "Arduino",
